@@ -1,0 +1,70 @@
+.scale-60 {
+    width: 60%;
+}
+.scale-70 {
+    width: 70%;
+}
+
+.landing_bg {
+    background-image: url("/img/land_image-01.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.land-bottom {
+    background-image: url("/img/land_bottom-01.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   width: 100%;
+
+}
+
+.slogan {
+    font-size: 24px;
+    color: white;
+}
+
+div.trans {
+    background: rgba(0, 0, 0, 0.432);
+}
+
+.fa {
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    text-align: center;
+    padding: 17.5px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+.fa:hover {
+    opacity: 0.9;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .red {
+    background-image: linear-gradient(to top, rgb(172, 172, 172), rgba(237,28,36,1));
+  }
