@@ -40,22 +40,18 @@ class ContactController extends Controller
         $request->validate([
             'firstName' => 'required',
             'lastName' => 'required',
-            'email' => 'required',
-            'company' => 'required'
+            'email' => 'required|email',
         ]);
 
         $contact = new Contact([
             'firstName' => $request->get('firstName'),
             'lastName' => $request->get('lastName'),
             'email' => $request->get('email'),
-            'company' => $request->get('compan,#y'),
-            'jobTitle' => $request->get('jobTitle'),
-            'city' => $request->get('city'),
-            'country' => $request->get('country')
+            'company' => $request->get('company')
         ]);
 
         $contact->save();
-        return redirect('/contacts')->with('success', 'Your interest is saved!');
+        return redirect('/')->with('success', 'Your interest is saved!');
     }
 
     /**
