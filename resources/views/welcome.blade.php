@@ -43,13 +43,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+                <div class="arrow bounce hide"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
             </div>
         </div>
         <div class="container-fluid land-bottom">
             <div class="row">
-                <div class="col-sm-6 mt-3 mb-5 pl-5 pr-5">
-                    <img src="{{ asset('img/contact_under_con-01.svg') }}" alt="" class="mx-auto d-block scale-70">
+                <div class="col-sm-6 mt-3 mb-5 pl-5 pr-5 hide">
+                    <img src="{{ asset('img/contact_under_con-01.svg') }}" alt="" class="responsive mx-auto d-block scale-70">
 
                     {{-- <h1 class="text-white text-center">Join our platform or find out more information!</h1>
                     <div>
@@ -100,7 +100,7 @@
                     </div> --}}
                 </div>
                 <div class="col-sm-6">
-                    <img src="{{ asset('img/bot_img-01.svg') }}" alt="" class="mx-auto d-block scale-70">
+                    <img src="{{ asset('img/bot_img-01.svg') }}" alt="" class="responsive mx-auto d-block scale-70">
 
                 </div>
             </div>

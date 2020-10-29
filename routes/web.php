@@ -31,3 +31,5 @@ Route::get('send-email', function() {
 
     dd("email is sent");
 });
+
+Route::post('deploy', 'DeployController@deploy');
