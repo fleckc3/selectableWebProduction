@@ -26,7 +26,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return view('contacts.create');
+        return view('/');
     }
 
     /**
@@ -41,6 +41,7 @@ class ContactController extends Controller
             'firstName' => 'required',
             'lastName' => 'required',
             'email' => 'required|email',
+            'company' => 'nullable'
         ]);
 
         $contact = new Contact([
@@ -51,7 +52,7 @@ class ContactController extends Controller
         ]);
 
         $contact->save();
-        return redirect('/')->with('success', 'Your interest is saved!');
+        return redirect()->back()->with('message', 'Your interest is submitted and we will follow up with you shortly!');
     }
 
     /**

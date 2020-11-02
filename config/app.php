@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Selectable'),
 
     /*
     |--------------------------------------------------------------------------
@@ -228,7 +228,5 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-
-    'deploy_secret' => env('APP_DEPLOY_SECRET'),
 
 ];
