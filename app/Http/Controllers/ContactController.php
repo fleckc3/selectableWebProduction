@@ -39,16 +39,18 @@ class ContactController extends Controller
     {
         $request->validate([
             'firstName' => 'required',
-            'lastName' => 'required',
+            'lastName' => 'nullable',
             'email' => 'required|email',
-            'company' => 'nullable'
+            'company' => 'nullable',
+            'message' => 'nullable|max:150'
         ]);
 
         $contact = new Contact([
             'firstName' => $request->get('firstName'),
             'lastName' => $request->get('lastName'),
             'email' => $request->get('email'),
-            'company' => $request->get('company')
+            'company' => $request->get('company'),
+            'message' => $request->get('message')
         ]);
 
         $contact->save();
