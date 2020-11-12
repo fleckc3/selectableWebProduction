@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Restaurant reservation app powered by virtual and interactive restaurant content. Featuring table layouts and 360° content. A COVID conscious reservation app." />
 
-        <title>Virtual Restaurant and Interactive Reservation App | SelecTable</title>
+        <title>Restaurant Reservations and Interactive Reservation App | SelecTable</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">

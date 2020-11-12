@@ -21,15 +21,15 @@ Route::get('/', function () {
 Route::resource('contacts', 'App\Http\Controllers\ContactController');
 
 
-Route::get('send-email', function() {
-    $details = [
-        'title' => 'mail from selectable.ie',
-        'body' => 'this is for testing email using smtp'
-    ];
+// Route::get('send-email', function() {
+//     $details = [
+//         'title' => 'mail from selectable.ie',
+//         'body' => 'this is for testing email using smtp'
+//     ];
 
-    Mail::to('selectable.ie@gmail.com')->send(new \App\Mail\ContactMail($details));
+//     Mail::to('selectable.ie@gmail.com')->send(new \App\Mail\ContactMail($details));
 
-    dd("email is sent");
-});
+//     dd("email is sent");
+// });
 
 Route::post('deploy', 'DeployController@deploy');
